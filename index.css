@@ -1,0 +1,124 @@
+:root {
+  --width: 35vw;
+  --border-radius: 0.5rem;
+  --box-shadow: 0 0.5rem hsl(0, 55%, 62%);
+  --color: hsl(0, 0%, 97%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 100%, 74%);
+  font-family: "Poppins", sans-serif;
+  background-image: url(/images/bg-intro-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  height: 100vh;
+  align-items: center;
+}
+.write-up h3 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+.write-up {
+  color: var(--color);
+  padding: 3rem;
+}
+.form-here {
+  width: auto;
+  padding: 2.5em;
+}
+.purple {
+  border-radius: var(--border-radius);
+  color: var(--color);
+  background-color: hsl(248, 32%, 49%);
+  box-shadow: var(--box-shadow);
+  padding: 0.8rem 3rem;
+  margin-bottom: 1.5rem;
+  width: var(--width);
+}
+#bold {
+  font-weight: 600;
+}
+.form {
+  background-color: var(--color);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  width: var(--width);
+  box-shadow: var(--box-shadow);
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+.form-field input {
+  padding: 0.6rem 1.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid hsl(255, 3%, 72%);
+  border-radius: var(--border-radius);
+}
+.form-field button {
+  background-color: hsl(154, 59%, 51%);
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--color);
+  color: var(--color);
+  border-radius: var(--border-radius);
+}
+.small {
+  font-size: 0.7rem;
+  margin-left: 1rem;
+}
+.small a {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+}
+@media screen and (max-width: 400px) {
+  body {
+    background-image: url(/images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 0.9rem;
+    padding-top: 6rem;
+    /* padding-bottom: 2.5rem; */
+  }
+  .container {
+    flex-direction: column;
+  }
+  .write-up h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  .write-up {
+    color: var(--color);
+    padding: 0.5rem;
+    text-align: center;
+  }
+  .purple {
+    border-radius: var(--border-radius);
+    color: var(--color);
+    /* background-color: hsl(248, 32%, 49%); */
+    box-shadow: var(--box-shadow);
+    padding: 1rem 2.2rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  .form {
+    /* background-color: var(--color); */
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+  }
+}
