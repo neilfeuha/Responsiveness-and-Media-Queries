@@ -89,6 +89,8 @@ body {
     font-size: 0.9rem;
     padding-top: 6rem;
     /* padding-bottom: 2.5rem; */
+    margin: auto;
+    justify-content: center;
   }
   .container {
     flex-direction: column;
